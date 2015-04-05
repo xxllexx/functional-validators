@@ -1,0 +1,19 @@
+{
+    "name": "Validators",
+    "Description": "V for Validators",
+    "version": "0.0.1",
+    "dependencies": {
+        "del": "latest",
+        "gulp": "latest",
+        "gulp-concat": "latest",
+        "gulp-jshint": "latest",
+        "gulp-karma": "~0.0.4",
+        "gulp-rename": "latest",
+        "gulp-replace": "latest",
+        "gulp-uglify": "latest",
+        "gulp-wrapper": "latest",
+        "karma-jasmine": "~0.3.1",
+        "karma-junit-reporter": "latest",
+        "karma-phantomjs-launcher": "~0.1.4"
+    }
+}
