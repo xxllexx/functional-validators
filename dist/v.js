@@ -29,6 +29,19 @@ function getBaseValidatorFunctions () {
             return fn.bind({
                 message: message
             });
+        },
+        register: function(validatorName, validatorExpression, force){
+            if (!(validatorName in this) || force) {
+                this[validatorName] = function(){
+                    var args = Array.prototype.slice.call(arguments);
+                    return function(val){
+                        if (this && this.message) args.push(this.message);
+                        return validatorExpression.apply(null, [val].concat(args));
+                    };
+                };
+            } else {
+                throw new Error('Validator with this name already exists! To rewrite validator, put third parameter eq. "true"');
+            }
         }
     };
 }
@@ -58,6 +71,8 @@ function initValidators(baseValidatorFunctions, validators){
     "use strict";
 
     var _V = Object.create(baseValidatorFunctions);
+
+
 
     Object.keys(validators).forEach(function(key){
         _V[key] = function(){

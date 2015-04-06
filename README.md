@@ -142,32 +142,32 @@ Functional Validators.
 
 # How to add Validators
 
-If you want to add validators, you just need to extend v.validators.js in the following way: 
+ 
+```javascript
+
+    /**
+     * @params validatorName {string}
+     * @params validationExpression {function}
+     * @params force {boolean} - force rewrite, in case if validator with current name already exists
+     */
+     
+    V.register = function(validatorName, validationExpression, force){
+        ...
+    }
+
+```
+ 
+### Example
 
 ```javascript
 
-function getValidators() {
-    "use strict";
-
-    return {
-    	...
-        /**
-         * @params val {Any} - value that should be validate
-         * @params arg... {Any} - any amount of comma separated arguments, that will be used for validation
-         * @params message {String} - this is the message from V.message function 
-         */
-        customValidator: function(val, args... , message) {
-			
-        	return !!validationExpression || message || 'default error message'
-            
-        }
-        ...
-    }
-}
-
-...
-
-var userValidator = V.customValidator(args...),
-	result = userValidator(validationValue);
+    V.register('yourValidatorName', function(val, args..., message){
+        return !!validationExpression || massage || 'default error message';
+    }, false);
+     
+    
+    var validator = V.yourValidatorName(args...);
+    
+    validator(string);
 
 ```

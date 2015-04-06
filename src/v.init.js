@@ -3,6 +3,8 @@ function initValidators(baseValidatorFunctions, validators){
 
     var _V = Object.create(baseValidatorFunctions);
 
+
+
     Object.keys(validators).forEach(function(key){
         _V[key] = function(){
             var args = Array.prototype.slice.call(arguments);
