@@ -122,7 +122,7 @@ Functional Validators.
 
 ```
 
-6) Group validators with custom messages for special validator
+7) Group validators with custom messages for special validator
 ```javascript
 
 	var emailValidator = V.email(),
