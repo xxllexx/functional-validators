@@ -2,7 +2,7 @@
 
 Functional Validators. 
 
-**Fisrt**: Build validation expressions.
+**First**: Build validation expressions.
 
 **Second**: Validate your data by this expression.
 
@@ -142,7 +142,7 @@ Functional Validators.
 
 # How to add Validators
 
-If you want to add validators, you just need to extend v.valedators.js in the next way: 
+If you want to add validators, you just need to extend v.validators.js in the following way: 
 
 ```javascript
 
