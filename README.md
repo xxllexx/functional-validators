@@ -87,7 +87,7 @@ Functional Validators.
 	var emailValidator = V.email(),
     	rangeValidator = V.range(5, 10),
         textValidator = V.text(),
-    	groupANDValidator = V.or(textValidator, rangeValidator),
+    	groupANDValidator = V.and(textValidator, rangeValidator),
         groupORValidator = V.or(groupANDValidator, emailValidator);
         
 	groupORValidator('email@domain.com');
