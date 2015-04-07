@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <testsuites>
-  <testsuite name="PhantomJS 1.9.8 (Mac OS X)" package="" timestamp="2015-04-06T17:05:03" id="0" hostname="Alexeys-MacBook-Pro-2.local" tests="28" errors="0" failures="0" time="0.008">
+  <testsuite name="PhantomJS 1.9.8 (Mac OS X)" package="" timestamp="2015-04-07T06:50:49" id="0" hostname="Alexeys-MacBook-Pro-2.local" tests="28" errors="0" failures="0" time="0.005">
     <properties>
       <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.8 Safari/534.34"/>
     </properties>
     <testcase name="String should be valid" time="0.001" classname="PhantomJS 1.9.8 (Mac OS X).Capital Letter spec"/>
-    <testcase name="String should be invalid" time="0.003" classname="PhantomJS 1.9.8 (Mac OS X).Capital Letter spec"/>
-    <testcase name="Email should be valid" time="0" classname="PhantomJS 1.9.8 (Mac OS X).Email Validator spec"/>
+    <testcase name="String should be invalid" time="0" classname="PhantomJS 1.9.8 (Mac OS X).Capital Letter spec"/>
+    <testcase name="Email should be valid" time="0.001" classname="PhantomJS 1.9.8 (Mac OS X).Email Validator spec"/>
     <testcase name="Email should be invalid" time="0" classname="PhantomJS 1.9.8 (Mac OS X).Email Validator spec"/>
     <testcase name="Should return base functions list" time="0" classname="PhantomJS 1.9.8 (Mac OS X).Get Base Functions"/>
     <testcase name="Should return validators list" time="0" classname="PhantomJS 1.9.8 (Mac OS X).Get Validators"/>
@@ -20,8 +20,8 @@
     <testcase name="Test Validator should be registered" time="0.001" classname="PhantomJS 1.9.8 (Mac OS X).Validator registration"/>
     <testcase name="Email Validator shouldn&apos;t be registered" time="0" classname="PhantomJS 1.9.8 (Mac OS X).Validator registration"/>
     <testcase name="Email Validator should be registered with force: true" time="0" classname="PhantomJS 1.9.8 (Mac OS X).Validator registration"/>
-    <testcase name="String should contain text only" time="0" classname="PhantomJS 1.9.8 (Mac OS X).Text spec"/>
-    <testcase name="String should not contain text only" time="0.001" classname="PhantomJS 1.9.8 (Mac OS X).Text spec"/>
+    <testcase name="String should contain text only" time="0.001" classname="PhantomJS 1.9.8 (Mac OS X).Text spec"/>
+    <testcase name="String should not contain text only" time="0" classname="PhantomJS 1.9.8 (Mac OS X).Text spec"/>
     <testcase name="String should be a valid url" time="0" classname="PhantomJS 1.9.8 (Mac OS X).Capital Letter spec"/>
     <testcase name="String should be invalid" time="0" classname="PhantomJS 1.9.8 (Mac OS X).Capital Letter spec"/>
     <testcase name="Validator lib should be defined" time="0" classname="PhantomJS 1.9.8 (Mac OS X).Main Validator spec"/>
@@ -31,7 +31,7 @@
     <testcase name="Range Validator should return correct message" time="0.001" classname="PhantomJS 1.9.8 (Mac OS X).Main Validator spec"/>
     <testcase name="Group with validators, AND function" time="0" classname="PhantomJS 1.9.8 (Mac OS X).Main Validator spec"/>
     <testcase name="Group with validators, OR function" time="0" classname="PhantomJS 1.9.8 (Mac OS X).Main Validator spec"/>
-    <testcase name="Group with validators, custom error message" time="0.001" classname="PhantomJS 1.9.8 (Mac OS X).Main Validator spec"/>
+    <testcase name="Group with validators, custom error message" time="0" classname="PhantomJS 1.9.8 (Mac OS X).Main Validator spec"/>
     <system-out><![CDATA[
 ]]></system-out>
     <system-err/>
