@@ -30,7 +30,7 @@ Functional Validators.
     
 	emailValidator('email@domain.com'); 
     //output: true
-   	emailValidator('email@domaincom'); 
+   	emailValidator('emaildomaincom'); 
     //output: 'invalid email'
     
 ```
