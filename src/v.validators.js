@@ -18,7 +18,7 @@ function getValidators() {
             return true;
         },
         capitalLetter: function(val, message){
-            return /^[A-Z].*/.test(val) || message || "first letter should be capital";
+            return /^[A-Z]/.test(val) || message || "first letter should be capital";
         },
         text: function(val, message){
             return /^[a-z]+$/ig.test(val) || message || "should be a text only";
