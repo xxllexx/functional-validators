@@ -2,6 +2,7 @@
     "name": "Validators",
     "Description": "V for Validators",
     "version": "0.0.1",
+    "main": "dist/v.js",
     "dependencies": {
         "del": "latest",
         "gulp": "latest",
