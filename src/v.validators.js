@@ -38,7 +38,7 @@ function getValidators() {
         date: function(val, format, message) {
             var _format = format.split(/\s|-|\.|\//),
                 regParts = _format.map(function(part){
-                    return '[\\d]{'+ part.length +'}'
+                    return '[\\d]{'+ part.length +'}';
                 }),
                 formatspaces = [].concat(format.match(new RegExp(_format.join('(.*)'), 'i'))).splice(1);
             
