@@ -28,6 +28,28 @@ function getValidators() {
         },
         word: function(val, message) {
             return /^\w+$/.test(val) || message || 'word string is invalid';
-        }
+        },
+        required: function(val, message){
+            return !!(val && val.length) || message || 'the field is required';
+        },
+        phone: function(val, message){
+            return !!(/^[\s()+-]*([0-9][\s()+-]*){6,20}$/.test(val)) || message || 'the field is required';
+        },
+        date: function(val, format, message) {
+            var _format = format.split(/\s|-|\.|\//),
+                regParts = _format.map(function(part){
+                    return '[\\d]{'+ part.length +'}'
+                }),
+                formatspaces = [].concat(format.match(new RegExp(_format.join('(.*)'), 'i'))).splice(1);
+            
+            var finalRegExStr = regParts.join('~').replace(/~/g, function(){
+                var space = formatspaces.shift();
+                if (space === '.') space = '\\' + space;
+                return formatspaces ? space : '\\/';
+            });
+
+            return !!(new RegExp(finalRegExStr).test(val)) || message || 'wrong date format';
+        },
+        time: function(val, format, message){}
     };
 }
