@@ -133,7 +133,7 @@ function getValidators() {
             return /^\w+$/.test(val) || message || 'word string is invalid';
         },
         required: function(val, message){
-            return !!(val && val.length) || message || 'the field is required';
+            return !!(val) || message || 'the field is required';
         },
         phone: function(val, message){
             return !!(/^[\s()+-]*([0-9][\s()+-]*){6,20}$/.test(val)) || message || 'the field is required';
