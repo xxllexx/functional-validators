@@ -103,7 +103,7 @@ function getValidators() {
 
     return {
         number: function(val, message){
-            return /^[0-9]+$/.test(val) || message || "invalid number";
+            return /^[0-9.,]+$/.test(val) || message || "invalid number";
         },
         email : function(val, message){
             var reg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
