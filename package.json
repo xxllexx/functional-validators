@@ -1,5 +1,5 @@
 {
-    "name": "Functional validators",
+    "name": "Functional-validators",
     "Description": "V for Validators",
     "version": "1.0.0",
     "main": "dist/v.js",
