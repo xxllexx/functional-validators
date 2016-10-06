@@ -1,3 +1,5 @@
+![NPM](https://nodei.co/npm/functional-validators.png?downloads=true&downloadRank=true&stars=true)
+
 # About
 
 Functional Validators.
@@ -5,6 +7,23 @@ Functional Validators.
 **First**: Build validation expressions.
 
 **Second**: Validate your data by this expression.
+
+## Installation
+```
+npm install functional-validators
+```
+### Importing
+
+**nodejs**
+```javascript
+var V = require('functional-validators')
+```
+
+**browser**
+```html
+<script src="v.min.js"></script>
+```
+
 
 # Validators List
 
